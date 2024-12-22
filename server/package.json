@@ -35,7 +35,7 @@
     "@types/eslint__js": "^8.42.3",
     "@types/express": "^5.0.0",
     "@types/helmet": "^4.0.0",
-    "@types/node": "^22.9.0",
+    "@types/node": "^22.10.2",
     "@types/nodemon": "^1.19.6",
     "@types/supertest": "^6.0.2",
     "babel-jest": "^29.7.0",
