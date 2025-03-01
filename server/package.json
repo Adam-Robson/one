@@ -25,7 +25,7 @@
     "helmet": "^8.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.26.0",
+    "@babel/core": "^7.26.9",
     "@babel/preset-env": "^7.26.9",
     "@babel/preset-typescript": "^7.26.0",
     "@eslint/js": "^9.17.0",
