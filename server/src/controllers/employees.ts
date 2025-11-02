@@ -33,8 +33,15 @@ export async function getEmployeeById(
   next: NextFunction
 ) {
   try {
+    // Validate that id is a positive integer
+    const { id } = req.params;
+    if (!/^\d+$/.test(id)) {
+      // Invalid input: respond with 400 Bad Request
+      res.status(400).json({ message: 'Invalid employee ID' });
+      return;
+    }
     const response = await axios.get(
-      `https://jsonplaceholder.typicode.com/users/${req.params.id}`
+      `https://jsonplaceholder.typicode.com/users/${id}`
     );
     const employee = response.data;
 
