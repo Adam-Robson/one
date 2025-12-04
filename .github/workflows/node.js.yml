@@ -20,7 +20,7 @@ jobs:
 
     steps:
       - name: Checkout server source code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Setup Node.js ${{ matrix.node-version }} for server
         uses: actions/setup-node@v6
@@ -59,7 +59,7 @@ jobs:
 
     steps:
       - name: Checkout client source code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Setup Node.js ${{ matrix.node-version }} for client
         uses: actions/setup-node@v6
